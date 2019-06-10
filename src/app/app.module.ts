@@ -4,17 +4,38 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 
-import { AppComponent } from './app.component'
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { DependenteComponent } from './dependente/dependente.component';
+import { ResultadoComponent } from './resultado/resultado.component';
+import { DuvidasComponent } from './duvidas/duvidas.component';
+import { QuestionarioComponent } from './questionario/questionario.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import {ROUTES} from './app.routes';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    CadastroComponent,
+    DependenteComponent,
+    ResultadoComponent,
+    DuvidasComponent,
+    QuestionarioComponent,
+    HomeComponent,
+    AboutComponent,
+    UsuarioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule
+    RouterModule.forRoot(ROUTES),
   ],
   providers: [],
   bootstrap: [AppComponent]

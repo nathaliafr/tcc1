@@ -1,0 +1,60 @@
+
+<div class="container">
+
+
+
+
+
+  <div class="card bg-light" align="center">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+      <h4 class="card-title mt-3 text-center">Criar Conta</h4>
+      <p class="text-center">Get started with your free account</p>
+      <p>
+        <a href="" class="btn btn-block btn-facebook">Login via facebook</a>
+      </p>
+      <p class="divider-text">
+        <span class="bg-light">OR</span>
+      </p>
+      <form>
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+             <i class="fa fa-user"></i>
+          </div>
+          <input  name="" class="form-control" placeholder="Full name" type="text" style="width: 400px">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+          <input name="" class="form-control" placeholder="Email address" type="email" style="width: 400px">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+          </div>
+          <input name="" class="form-control" placeholder="Phone number" type="text" style="width: 400px">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" placeholder="Create password" type="password" style="width: 400px">
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" placeholder="Repeat password" type="password" style="width: 400px">
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block" [routerLink]="['/usuario']"> Create Account  </button>
+        </div> <!-- form-group// -->
+        <p class="text-center">Have an account? <a [routerLink]="['/login']">Log In</a> </p>
+      </form>
+    </article>
+  </div> <!-- card.// -->
+
+</div>
+<!--container end.//-->
+
+

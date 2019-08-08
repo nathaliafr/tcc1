@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
@@ -31,6 +30,7 @@ import { LoginComponent } from './login/login.component';
     AboutComponent,
     UsuarioComponent,
     LoginComponent
+
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Http} from '@angular/http';
 
 @Component({
   selector: 'mt-cadastro',
@@ -6,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  usuarios: Object[] = [];
+  constructor(http: Http) {
+    http.get('http://localhost:8080/usuario/').subscribe(usuarios => {
+      this.usuarios = usuarios.json();
+      console.log(this.usuarios);
+    });
+/*    http.get('http://localhost:8080/pergunta/')
+      .subscribe(perguntas => {
+        this.perguntas = perguntas.json();
+        console.log(this.perguntas);
+    });*/
+}
 
   ngOnInit() {
   }

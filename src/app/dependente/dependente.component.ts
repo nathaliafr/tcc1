@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DependenteService} from './dependente.service';
 
 @Component({
   selector: 'mt-dependente',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DependenteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dependenteService: DependenteService) {
+    this.dependenteService.getCriancas();
+  }
 
   ngOnInit() {
   }

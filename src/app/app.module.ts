@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpModule} from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 
@@ -16,6 +16,10 @@ import { AboutComponent } from './about/about.component';
 import {ROUTES} from './app.routes';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { LoginComponent } from './login/login.component';
+import {UsuarioService} from './usuario/usuario.service';
+import {DependenteService} from './dependente/dependente.service';
+import {DuvidaService} from './duvidas/duvida.service';
+import {ResultadoService} from './resultado/resultado.service';
 
 
 @NgModule({
@@ -37,7 +41,7 @@ import { LoginComponent } from './login/login.component';
     HttpModule,
     RouterModule.forRoot(ROUTES),
   ],
-  providers: [],
+  providers: [UsuarioService, DependenteService, DuvidaService, ResultadoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,5 +18,6 @@ export const ROUTES: Routes = [
   {path: 'questionario', component: QuestionarioComponent},
   {path: 'resultado', component: ResultadoComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'usuario', component: UsuarioComponent}
+  {path: 'usuario', component: UsuarioComponent},
+  {path: 'usuario/1', component: UsuarioComponent}
   ];
